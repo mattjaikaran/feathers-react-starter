@@ -2,9 +2,9 @@
 
 This is a fullstack React NodeJS web app boilerplate built with FeathersJS (a microservice NodeJS framework) and React. <br />
 
-The API has authentication included. Authorization/permissions will be added via feathers-permissions <br />
+The Feathers API has authentication, CRUD functionality and routing are reimagined as services. Authorization/permissions will be added via feathers-permissions. <br />
 
-The React application has React Router v5, Material UI, Styled Components
+The React application has React Router v5, Material UI, Styled Components.
 
 ## Available Scripts
 
@@ -59,7 +59,7 @@ Getting up and running is as easy as 1, 2, 3.
 2. Install your dependencies
 
     ```
-    cd path/to/mapbox-app
+    cd path/to/feathers-react-starter
     npm install
     ```
 
