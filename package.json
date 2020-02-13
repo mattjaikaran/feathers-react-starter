@@ -1,0 +1,61 @@
+{
+  "name": "mapbox-app",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "Matthew Jaikaran",
+    "email": "mattjaikaran@gmail.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/",
+    "config": "config/"
+  },
+  "engines": {
+    "node": "^12.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "npm run eslint && npm run jest",
+    "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "jest": "jest  --forceExit"
+    "start": "node src/",
+    "client": "cd client && npm start",
+    "server": "nodemon src/",
+    "build": "cd client && npm run build",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+  },
+  "dependencies": {
+    "@feathersjs/authentication": "^4.3.5",
+    "@feathersjs/authentication-local": "^4.3.5",
+    "@feathersjs/authentication-oauth": "^4.3.5",
+    "@feathersjs/configuration": "^4.3.4",
+    "@feathersjs/errors": "^4.3.4",
+    "@feathersjs/express": "^4.3.5",
+    "@feathersjs/feathers": "^4.3.4",
+    "@feathersjs/socketio": "^4.3.5",
+    "compression": "^1.7.4",
+    "concurrently": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "feathers-mongoose": "^8.1.0",
+    "helmet": "^3.21.1",
+    "mongodb-core": "^3.2.7",
+    "mongoose": "^5.7.5",
+    "serve-favicon": "^2.5.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "axios": "^0.19.0",
+    "eslint": "^6.5.1",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.3"
+  }
+}
